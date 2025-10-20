@@ -91,7 +91,7 @@ const Contact = () => {
           transition={{ delay: 0.6 }}
           className="text-center mt-12 text-muted-foreground"
         >
-          <p>© 2025 K. Sai Sri Kondaveeti. All rights reserved.</p>
+          <p>© 2025 K. Sai Sri . All rights reserved.</p>
         </motion.div>
       </div>
     </section>

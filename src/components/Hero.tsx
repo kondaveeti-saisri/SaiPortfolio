@@ -22,7 +22,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            K. Sai Sri Kondaveeti
+            Sai Sri  
           </motion.h1>
 
           <motion.div
