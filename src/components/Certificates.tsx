@@ -4,12 +4,15 @@ import { useRef } from 'react';
 import { Award } from 'lucide-react';
 
 const certificatesData = [
-  { name: 'National Hackathon', issuer: 'PSCMR College' },
+
   { name: 'JavaScript Certification', issuer: 'Udemy' },
   { name: 'Power BI for Data Analysis', issuer: 'VOIS' },
   { name: 'Data Science Foundations', issuer: 'Great Learning' },
-  { name: 'Games of Code', issuer: 'VVIT' },
-  { name: 'Algo Arena', issuer: 'VVIT' },
+  { name: 'Data Analytics Job simulation' , issuer: 'Deloitte'},
+  { name: 'Advanced software engineering' , issuer: 'Walmart Globaltech'},
+  { name: 'GenAI Powered DataAnalytics' , issuer: 'TATA'},
+  { name: 'DataVisualisation : EmpoweringBusiness with Effective insights' , issuer:'TATA'},
+  { name: 'DataScience' , issuer: 'BCGX'}
 ];
 
 const Certificates = () => {

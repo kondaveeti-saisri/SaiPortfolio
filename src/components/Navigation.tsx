@@ -67,7 +67,7 @@ const Navigation = () => {
             to="/"
             className="text-2xl font-bold text-primary hover:text-gold-light transition-colors"
           >
-            KSK
+            SS
           </Link>
 
           {/* Desktop Menu */}

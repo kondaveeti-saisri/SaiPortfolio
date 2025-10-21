@@ -8,19 +8,19 @@ const academicData = [
     degree: 'B.Tech in CSE (AI & Data Science)',
     institution: 'Kallam Haranadha Reddy Institute of Technology',
     grade: 'Grade: A',
-    year: '2021 - 2025',
+    year: '2023 - 2027',
   },
   {
     degree: 'Intermediate (MPC)',
     institution: 'Junior College for Girls',
     grade: 'Grade: A',
-    year: '2019 - 2021',
+    year: '2021 - 2023',
   },
   {
     degree: 'High School',
     institution: 'Z.P. High School',
     grade: 'GPA: 9.8',
-    year: '2018 - 2019',
+    year: '2017 - 2021',
   },
 ];
 

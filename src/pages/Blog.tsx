@@ -5,33 +5,21 @@ import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 const blogPosts = [
   {
-    title: 'My Journey into Data Science',
-    date: 'March 15, 2024',
-    readTime: '5 min read',
-    excerpt: 'How I discovered my passion for data science and the path I took to pursue it...',
-    category: 'Career',
+    title: 'Hackathon Experience ',
+    excerpt: ' Participated in my first-ever 24 hours National Level Hacthon held at PSCMR college.',
+    
   },
   {
-    title: 'Lessons from My First Hackathon',
-    date: 'February 20, 2024',
-    readTime: '7 min read',
-    excerpt: 'Key takeaways from the 24-hour hackathon experience at PSCMR College...',
-    category: 'Experience',
+    title: 'Algo Arena',
+    excerpt: 'Algo Arena coding event organized by VVIT college.It was a challenging yet rewarding experience.',
+    
   },
   {
-    title: 'Building Projects That Matter',
-    date: 'January 10, 2024',
-    readTime: '6 min read',
-    excerpt: 'Why I focus on creating projects that solve real-world problems...',
-    category: 'Projects',
+    title: 'Amaravathi Quantum Valley Hacthon',
+    excerpt: 'AQVH was more than just coding- it was about creativity and problem-solving.',
+    
   },
-  {
-    title: 'The Power of Continuous Learning',
-    date: 'December 5, 2023',
-    readTime: '4 min read',
-    excerpt: 'My approach to staying updated in the fast-paced tech world...',
-    category: 'Learning',
-  },
+  
 ];
 
 const Blog = () => {
@@ -80,16 +68,7 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
 
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                  <span className="flex items-center gap-1">
-                    <Calendar size={16} />
-                    {post.date}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Clock size={16} />
-                    {post.readTime}
-                  </span>
-                </div>
+                
 
                 <div className="flex items-center gap-2 text-primary group-hover:text-gold-light transition-colors">
                   <span className="font-semibold">Read More</span>

@@ -10,24 +10,14 @@ const achievementsData = [
     description: 'Won the coding competition demonstrating excellence in problem-solving',
     icon: Trophy,
   },
-  {
-    title: 'Algo Arena - Top Performer',
-    organization: 'VVIT',
-    description: 'Strong performance in algorithmic thinking competition',
-    icon: Target,
-  },
+  
   {
     title: 'Webathon Finalist',
     organization: 'Siddharth College',
     description: 'Finalist among 290+ teams showcasing web development innovation',
     icon: Award,
   },
-  {
-    title: 'National Hackathon',
-    organization: 'PSCMR College',
-    description: '24-hour hackathon experience with Smart Helmet project',
-    icon: Trophy,
-  },
+  
   {
     title: 'Rupagana Event Finalist',
     organization: 'Virtual Pandemic Simulation',
