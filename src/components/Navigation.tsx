@@ -18,39 +18,49 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/#home' },
+    { name: 'Home', path: '/' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/#contact' },
   ];
 
   const handleNavClick = (path: string) => {
-    // If link is a section link (e.g. "/#contact")
-    if (path.includes('#')) {
-      const [base, hash] = path.split('#');
+  if (path === '/') {
+    // If we are already on Home page
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If we are on another page, navigate to home then scroll to top
+      navigate('/');
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 300);
+    }
+  } 
+  else if (path.includes('#')) {
+    const [base, hash] = path.split('#');
 
-      if (location.pathname !== base) {
-        // Navigate to base page first, then scroll after small delay
-        navigate(base);
-        setTimeout(() => {
-          const section = document.getElementById(hash);
-          if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 300);
-      } else {
-        // Already on the same page → just scroll
+    if (location.pathname !== base) {
+      navigate(base);
+      setTimeout(() => {
         const section = document.getElementById(hash);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }
+      }, 300);
     } else {
-      // Regular navigation (e.g. /blog)
-      navigate(path);
+      const section = document.getElementById(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+  } 
+  else {
+    navigate(path);
+  }
 
-    setMobileOpen(false);
-  };
+  setMobileOpen(false);
+};
+
 
   return (
     <motion.nav

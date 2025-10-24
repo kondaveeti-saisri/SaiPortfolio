@@ -54,11 +54,7 @@ const Blog = () => {
                 whileHover={{ y: -10 }}
                 className="bg-card border border-border rounded-lg p-6 hover-glow group cursor-pointer"
               >
-                <div className="mb-4">
-                  <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                    {post.category}
-                  </span>
-                </div>
+             
 
                 <h2 className="text-2xl font-bold text-primary mb-3 group-hover:text-gold-light transition-colors">
                   {post.title}
