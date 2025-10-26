@@ -5,7 +5,7 @@ import { Award } from 'lucide-react';
 
 const certificatesData = [
 
-  { name: 'JavaScript Certification', issuer: 'Udemy' },
+  { name: 'JavaScript Certification', issuer: 'Udemy' , driveLink: "https://drive.google.com/file/d/11yRQozXTEMJwkwX0jSVX21ZixlovQb05/preview" },
   { name: 'Power BI for Data Analysis', issuer: 'VOIS' },
   { name: 'Data Science Foundations', issuer: 'Great Learning' },
   { name: 'Data Analytics Job simulation' , issuer: 'Deloitte'},
@@ -39,6 +39,11 @@ const Certificates = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, rotate: 2 }}
               className="bg-card border border-border rounded-lg p-6 hover-glow cursor-pointer group"
+              onClick={() => {
+                if (cert.driveLink) {
+                  window.open(cert.driveLink,'_blank','noopener,noreferr');
+                }
+              }}
             >
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 p-4 bg-primary/10 rounded-full group-hover:animate-glow-pulse">
