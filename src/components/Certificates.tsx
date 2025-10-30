@@ -10,6 +10,7 @@ const certificatesData = [
   { name: 'Data Science Foundations', issuer: 'Great Learning', driveLink: "https://drive.google.com/file/d/1Yh4GYpbZ2eHWtgDgZykMpjVRH9_JeBv7/preview" },
   { name: 'Data Analytics Job simulation' , issuer: 'Deloitte' , driveLink: "https://drive.google.com/file/d/10X_er4yEm2qzCsIjOjx7S1lcdSPnsa6w/view"},
   { name: 'Advanced software engineering' , issuer: 'Walmart Globaltech' , driveLink: "https://drive.google.com/file/d/16-kI8N9bLkwxXUz9zuF919cl-lZ1kT_3/view"},
+  { name: 'Top Performer in Academics' , issuer: 'KHIT' , driveLink: "https://drive.usercontent.google.com/download?id=1TgMNrVzv87vlBdEixowoq-Hy6m7FPGPt&export=view&authuser=0"}
   
 ];
 

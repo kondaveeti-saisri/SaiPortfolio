@@ -12,6 +12,13 @@ const achievementsData = [
   },
 
   {
+    title: 'Merit Award - Top Performer',
+    organization: 'KHIT',
+    description: 'Recognized as a top performer in academic excellence',
+    icon: Trophy,
+  },
+
+  {
     title: 'Webathon Finalist',
     organization: 'Siddharth College',
     description: 'Finalist among 290+ teams showcasing web development innovation',
