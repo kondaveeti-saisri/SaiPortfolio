@@ -10,7 +10,7 @@ const achievementsData = [
     description: 'Won the coding competition demonstrating excellence in problem-solving',
     icon: Trophy,
   },
-  
+
   {
     title: 'Webathon Finalist',
     organization: 'Siddharth College',
@@ -29,6 +29,7 @@ const achievementsData = [
 const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+  
 
   return (
     <section className="py-20 relative z-10 bg-card/30">

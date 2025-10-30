@@ -6,13 +6,11 @@ import { Award } from 'lucide-react';
 const certificatesData = [
 
   { name: 'JavaScript Certification', issuer: 'Udemy' , driveLink: "https://drive.google.com/file/d/11yRQozXTEMJwkwX0jSVX21ZixlovQb05/preview" },
-  { name: 'Power BI for Data Analysis', issuer: 'VOIS' },
-  { name: 'Data Science Foundations', issuer: 'Great Learning' },
-  { name: 'Data Analytics Job simulation' , issuer: 'Deloitte'},
-  { name: 'Advanced software engineering' , issuer: 'Walmart Globaltech'},
-  { name: 'GenAI Powered DataAnalytics' , issuer: 'TATA'},
-  { name: 'DataVisualisation : EmpoweringBusiness with Effective insights' , issuer:'TATA'},
-  { name: 'DataScience' , issuer: 'BCGX'}
+  { name: 'Power BI for Data Analysis', issuer: 'VOIS', driveLink: "https://drive.google.com/uc?export=view&id=1b_mpUK9Ec4bIAcly43vnpk87zoudFlhM"},
+  { name: 'Data Science Foundations', issuer: 'Great Learning', driveLink: "https://drive.google.com/file/d/1Yh4GYpbZ2eHWtgDgZykMpjVRH9_JeBv7/preview" },
+  { name: 'Data Analytics Job simulation' , issuer: 'Deloitte' , driveLink: "https://drive.google.com/file/d/10X_er4yEm2qzCsIjOjx7S1lcdSPnsa6w/view"},
+  { name: 'Advanced software engineering' , issuer: 'Walmart Globaltech' , driveLink: "https://drive.google.com/file/d/16-kI8N9bLkwxXUz9zuF919cl-lZ1kT_3/view"},
+  
 ];
 
 const Certificates = () => {
