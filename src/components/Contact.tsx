@@ -25,8 +25,8 @@ const contactLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'Coming Soon',
-    href: '#',
+    value: 'Sai sri',
+    href: 'https://www.linkedin.com/in/kondaveeti-sai-sri-a27247372/',
   },
 ];
 
