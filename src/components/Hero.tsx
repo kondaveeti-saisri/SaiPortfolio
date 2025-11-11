@@ -31,7 +31,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <span className="text-primary">Data Scientist</span> |{' '}
+            <span className="text-primary">Aspiring Data Scientist</span> |{' '}
             <span className="text-primary">Developer</span> |{' '}
             <span className="text-primary">Innovator</span>
           </motion.div>
