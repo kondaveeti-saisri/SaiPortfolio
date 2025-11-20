@@ -4,6 +4,12 @@ import { useRef } from 'react';
 import { GraduationCap } from 'lucide-react';
 
 const academicData = [
+
+  {
+    degree: 'Data Science ',
+    institution: 'IIT Madras',
+    
+  },
   {
     degree: 'B.Tech in CSE (AI & Data Science)',
     institution: 'Kallam Haranadha Reddy Institute of Technology',
