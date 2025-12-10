@@ -8,13 +8,14 @@ const academicData = [
   {
     degree: 'Data Science ',
     institution: 'IIT Madras',
+    year: '2026 - 2028'
     
   },
   {
     degree: 'B.Tech in CSE (AI & Data Science)',
     institution: 'Kallam Haranadha Reddy Institute of Technology',
-    grade: 'Grade: 9.3',
-    year: '2023 - 2027',
+    grade: 'Grade: 9',
+    year: '2023 - 2026',
   },
   {
     degree: 'Intermediate (MPC)',

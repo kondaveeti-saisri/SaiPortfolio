@@ -5,22 +5,28 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projectsData = [
   {
-    title: 'Smart Helmet Project',
-    description: 'Innovative safety solution developed during 24-hour hackathon at PSCMR College',
+    title: 'TrafficTelligence',
+    description: 'TrafficTelligence: Advanced Traffic Volume Estimation with Machine Learning developed during 24-hour hackathon at PSCMR College',
     tech: ['IoT', 'Hardware', 'Safety Tech'],
-    status: 'Hackathon Project',
+    status: '24-Hours Hackathon Project',
+    github: 'https://github.com/kondaveeti-saisri/traffic-telligence',
+    demo: null
   },
   {
-    title: 'Virtual Pandemic Simulation',
-    description: 'Finalist project at Rupagana Event - Interactive simulation for pandemic management',
-    tech: ['Simulation', 'Data Modeling', 'Web App'],
-    status: 'Competition Finalist',
+    title: 'Silent-Organizer',
+    description: 'FileOrganizer is an automated tool that monitors your Downloads folder and It runs silently in the background and logs every file movement.',
+    tech: ['Simulation','software development','python'],
+    status: '36-hours Hacthon Project',
+    github: 'https://github.com/kondaveeti-saisri/Silent-Organizer',
+    demo: null
   },
   {
-    title: 'Data Analysis Dashboard',
-    description: 'Power BI powered analytics platform for data visualization and insights',
-    tech: ['Power BI', 'Data Analysis', 'Visualization'],
-    status: 'Certified Project',
+    title: 'Q-TrustNet',
+    description: 'Q-TrustNet: we build a Q-Trust Net,It identified the Anomalies by using Federative Learning.',
+    tech: ['Quantum computing', 'Federated Learning', 'Anomaly Dection'],
+    status: 'Selected to Semi-finals in AQV Hackathon',
+    github: 'https://github.com/kondaveeti-saisri/q-trustnet-deployment',
+    demo:null 
   },
 ];
 
@@ -36,7 +42,7 @@ const Projects = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-gold"
         >
-           Projects
+          Projects
         </motion.h2>
 
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -54,15 +60,15 @@ const Projects = () => {
                   {project.status}
                 </span>
               </div>
-              
+
               <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-gold-light transition-colors">
                 {project.title}
               </h3>
-              
+
               <p className="text-foreground mb-4">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, idx) => (
                   <span
@@ -74,6 +80,7 @@ const Projects = () => {
                 ))}
               </div>
 
+              {/* 
               <div className="flex gap-4 pt-4 border-t border-border">
                 <button className="flex items-center gap-2 text-primary hover:text-gold-light transition-colors">
                   <Github size={18} />
@@ -84,6 +91,34 @@ const Projects = () => {
                   <span className="text-sm">Demo</span>
                 </button>
               </div>
+              */}
+
+              <div className="flex gap-4 pt-4 border-t border-border">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:text-gold-light transition-colors"
+                  >
+                    <Github size={18} />
+                    <span className="text-sm">Code</span>
+                  </a>
+                )}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:text-gold-light transition-colors"
+                  >
+                    <ExternalLink size={18} />
+                    <span className="text-sm">Demo</span>
+                  </a>
+                )}
+              </div>
+
             </motion.div>
           ))}
         </div>
